@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');*/
+
+/*font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Moutserrat', sans-serif;
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.flexbox {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.img{
+    width: 290px;
+    height: 450px;
+
+    padding: 30px;
+
+    background-image: url('/images/image-product-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 14px;
+    border-end-start-radius: 14px;
+}
+
+.card-content{
+    width: 290px;
+    height: 450px;
+
+    background-color: #f2f2f2;
+    border-top-right-radius: 14px;
+    border-end-end-radius: 14px;
+
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-title {
+    margin: 0;
+
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(228, 12%, 48%);
+}
+
+.card-name {
+    margin: 0;
+    padding-right: 35px;
+
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+    line-height: 1em;
+    color: hsl(212, 21%, 14%);
+}
+
+.card-description {
+    margin: 0;
+
+    font-family: 'Fraunces', serif;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.6em;
+    font-size: 15px;
+}
+
+.price {
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.current-price {
+    margin: 0;
+
+    font-family: 'Fraunces', serif;
+    font-size: 34px;
+    color: hsl(158, 36%, 37%);
+}
+
+.old-price {
+    font-family: 'Mountserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-size: 15px;
+}
+
+
+button {
+    padding: 12px 0px;
+
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 6px;
+    color: #f2f2f2;
+    transition: .3s ease;
+
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 23%);
+}
+
+@media(max-width: 628px) {
+    .flexbox {
+        flex-direction: column;
+    }
+
+    .img {
+        height: 210px;
+        border-top-right-radius: 14px;
+        border-end-start-radius: 0;
+    }
+
+    .card-content{
+        height: 350px;
+        border-top-left-radius: 0;
+        border-end-start-radius: 14px;
+    }
+}
